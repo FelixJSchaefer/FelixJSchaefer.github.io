@@ -110,47 +110,69 @@
 
 	<!-- about section
    ================================================== -->
-	<section id="about">
+   <section id="about">
+    <div class="row section-intro">
+        <div class="col-twelve">
+            <h5>About</h5>
+            <h1>Let me introduce myself.</h1>
+            <div class="intro-info">
+                <img src="images/profile-pic.jpg" alt="Profile Picture">
+                <p class="lead">Hi, I'm an aspiring game producer passionate about organizing the development of captivating gaming experiences. My versatility is my strongest asset—I have a broad skill set that extends beyond production to include comprehensive game design and in-engine work, enabling me to contribute effectively across various aspects of game development.</p>
+            </div>
+        </div>
+    </div> <!-- /section-intro -->
 
-		<div class="row section-intro">
-			<div class="col-twelve">
+    <div class="row about-content">
+        <div class="col-six tab-full">
+            <h3>Skills</h3>
+            <p>I have a broad experience across different project management tools.</p>
+            <!-- Skill Items -->
+            <div class="skill-item" onclick="toggleSkill('project-management')">
+                <h4>Project Management <span class="arrow">&#9662;</span></h4>
+            </div>
+            <div id="project-management" class="skill-detail" style="display:none;">
+                <p>Experience with tools like JIRA, Trello, and Codecks. Familiar with agile and waterfall methodologies.</p>
+            </div>
 
-				<h5>About</h5>
-				<h1>Let me introduce myself.</h1>
-
-				<div class="intro-info">
-
-					<img src="images/profile-pic.jpg" alt="Profile Picture">
-
-					<p class="lead">Hi, I'm an aspiring game producer passionate about organizing the development of
-						captivating gaming
-						experiences. My versatility is my strongest asset—I have a broad skill set that extends beyond
-						production to include comprehensive game design and in-engine work, enabling me to contribute
-						effectively across various aspects of game development.</p>
+            <div class="skill-item" onclick="toggleSkill('game-design')">
+                <h4>Game Design <span class="arrow">&#9662;</span></h4>
+            </div>
+            <div id="game-design" class="skill-detail" style="display:none;">
+                <p>Comprehensive understanding of game mechanics, storytelling in games, and user experience design.</p>
+            </div>
+            <!-- More skills can be added here in the same pattern -->
+        </div>
+		<div class="col-six tab-full">
+            <h3>Tools</h3>
+            <p>I have a broad experience across different project management tools.</p>
+            <!-- Skill Items -->
+            <div class="skill-item" onclick="toggleSkill('jira')">
+				<div class="skill-logo">
+					<img src="path/to/jira-logo.png" alt="JIRA" width="30" height="30"> <!-- Adjust the path to your logo -->
 				</div>
+                <h4>Jira <span class="arrow">&#9662;</span></h4>
+            </div>
+            <div id="jira" class="skill-detail" style="display:none;">
+                <p>Experience with tools like JIRA, Trello, and Asana. Familiar with agile and waterfall methodologies.</p>
+            </div>
 
-			</div>
-		</div> <!-- /section-intro -->
+            <div class="skill-item" onclick="toggleSkill('confluence')">
+                <h4>Confluence <span class="arrow">&#9662;</span></h4>
+            </div>
+            <div id="confluence" class="skill-detail" style="display:none;">
+                <p>Comprehensive understanding of game mechanics, storytelling in games, and user experience design.</p>
+            </div>
+            <!-- More skills can be added here in the same pattern -->
+        </div>
+    </div>
 
-		<div class="row about-content">
-
-			<div class="col-six tab-full">
-
-				<h3>Skills</h3>
-				<p>I have a broad experience across different project management tools.</p>
-
-			</div>
-
-		</div>
-
-		<div class="row button-section">
-			<div class="col-twelve">
-				<a href="#contact" title="Contact Me" class="button stroke smoothscroll">Contact Me</a>
-				<!-- <a href="#" title="Download CV" class="button button-primary">Download CV</a> -->
-			</div>
-		</div>
-
-	</section> <!-- /process-->
+    <div class="row button-section">
+        <div class="col-twelve">
+            <a href="#contact" title="Contact Me" class="button stroke smoothscroll">Contact Me</a>
+            <!-- <a href="#" title="Download CV" class="button button-primary">Download CV</a> -->
+        </div>
+    </div>
+</section> <!-- /process-->
 
 
 	<!-- resume Section
@@ -341,7 +363,7 @@
 			<div class="col-twelve">
 
 				<h5>Project Showcase</h5>
-				<h1>Check Out Some of My Works.</h1>
+				<h1>Check out some of my works.</h1>
 
 				<p class="lead">I've worked on several projects in different roles. Click on each project to learn more
 					about my involvement within the development.</p>
@@ -486,94 +508,6 @@
 								</div>
 
 							</div> <!-- /modal-03 -->
-
-							<div id="modal-03" class="popup-modal slider mfp-hide">
-
-								<div class="media">
-									<img src="images/portfolio/modals/m-clouds.jpg" alt="" />
-								</div>
-
-								<div class="description-box">
-									<h4>Clouds</h4>
-									<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-										bibendum
-										auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-									<div class="categories">Web Design</div>
-								</div>
-
-								<div class="link-box">
-									<a href="http://www.behance.net">Details</a>
-									<a href="#" class="popup-modal-dismiss">Close</a>
-								</div>
-
-							</div> <!-- /modal-03 -->
-
-							<div id="modal-04" class="popup-modal slider mfp-hide">
-
-								<div class="media">
-									<img src="images/portfolio/modals/m-beetle.jpg" alt="" />
-								</div>
-
-								<div class="description-box">
-									<h4>Beetle</h4>
-									<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-										bibendum
-										auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-									<div class="categories">Branding</div>
-								</div>
-
-								<div class="link-box">
-									<a href="http://www.behance.net">Details</a>
-									<a href="#" class="popup-modal-dismiss">Close</a>
-								</div>
-
-							</div> <!-- /modal-04 -->
-
-							<div id="modal-05" class="popup-modal slider mfp-hide">
-
-								<div class="media">
-									<img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
-								</div>
-
-								<div class="description-box">
-									<h4>Lighthouse</h4>
-									<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-										bibendum
-										auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-									<div class="categories">Web Development</div>
-								</div>
-
-								<div class="link-box">
-									<a href="http://www.behance.net">Details</a>
-									<a href="#" class="popup-modal-dismiss">Close</a>
-								</div>
-
-							</div> <!-- /modal-05 -->
-
-							<div id="modal-06" class="popup-modal slider mfp-hide">
-
-								<div class="media">
-									<img src="images/portfolio/modals/m-salad.jpg" alt="" />
-								</div>
-
-								<div class="description-box">
-									<h4>Salad</h4>
-									<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-										bibendum
-										auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-									<div class="categories">Branding</div>
-								</div>
-
-								<div class="link-box">
-									<a href="http://www.behance.net">Details</a>
-									<a href="#" class="popup-modal-dismiss">Close</a>
-								</div>
-
-							</div> <!-- /modal-06 -->
 
 
 							<!-- modal popups - end
