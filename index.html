@@ -117,7 +117,7 @@
             <h1>Let me introduce myself.</h1>
             <div class="intro-info">
                 <img src="images/profile-pic.jpg" alt="Profile Picture">
-                <p class="lead">Hi, I'm an aspiring game producer passionate about organizing the development of captivating gaming experiences. My versatility is my strongest asset—I have a broad skill set that extends beyond production to include comprehensive game design and in-engine work, enabling me to contribute effectively across various aspects of game development.</p>
+                <p class="lead">Hi, I'm an aspiring game producer passionate about organizing the development of captivating gaming experiences. My versatility is my strongest asset — I have a broad skill set that extends beyond production to include comprehensive game design and in-engine work, enabling me to contribute effectively across various aspects of game development.</p>
             </div>
         </div>
     </div> <!-- /section-intro -->
@@ -127,18 +127,46 @@
             <h3>Skills</h3>
             <p>I have a broad experience across different project management tools.</p>
             <!-- Skill Items -->
-            <div class="skill-item" onclick="toggleSkill('project-management')">
-                <h4>Project Management <span class="arrow">&#9662;</span></h4>
+            <div class="skill-item" onclick="toggleSkill('sprint-planning')">
+                <h4>Sprint Planning<span class="arrow">&#9662;</span></h4>
             </div>
-            <div id="project-management" class="skill-detail" style="display:none;">
-                <p>Experience with tools like JIRA, Trello, and Codecks. Familiar with agile and waterfall methodologies.</p>
+            <div id="sprint-planning" class="skill-detail" style="display:none;">
+                <p>My sprint plannings consist of clear sprint goals including deadlines and assignees. Before each sprint, I review the goals with the team and adjust them if neccessary.</p>
             </div>
 
-            <div class="skill-item" onclick="toggleSkill('game-design')">
-                <h4>Game Design <span class="arrow">&#9662;</span></h4>
+			<div class="skill-item" onclick="toggleSkill('scrum-master')">
+                <h4>Scrum Master<span class="arrow">&#9662;</span></h4>
             </div>
-            <div id="game-design" class="skill-detail" style="display:none;">
-                <p>Comprehensive understanding of game mechanics, storytelling in games, and user experience design.</p>
+            <div id="scrum-master" class="skill-detail" style="display:none;">
+                <p>Establishing a transparent scrum framework is crucial to my work ethic, with diligent participation in meetings such as daily stand-ups, sprint planning sessions, sprint reviews, and retrospectives being fundamental components.</p>
+            </div>
+
+			<div class="skill-item" onclick="toggleSkill('sprint-reviews')">
+                <h4>Sprint Reviews & Retrospectives<span class="arrow">&#9662;</span></h4>
+            </div>
+            <div id="sprint-reviews" class="skill-detail" style="display:none;">
+                <p>Conducting a thorough review of each sprint is crucial to me, focusing not only on the goals achieved but also on the team's morale and workflow dynamics.</p>
+            </div>
+
+			<div class="skill-item" onclick="toggleSkill('risk-analyses')">
+                <h4>Risk Analyses<span class="arrow">&#9662;</span></h4>
+            </div>
+            <div id="risk-analyses" class="skill-detail" style="display:none;">
+                <p>I collaborate with all departments to achieve holistic risk coverage, simultaneously crafting an alternative strategy to ensure we always have a solid backup plan ready to go.</p>
+            </div>
+
+            <div class="skill-item" onclick="toggleSkill('guides-and-documentation')">
+                <h4>Guides & Documentation<span class="arrow">&#9662;</span></h4>
+            </div>
+            <div id="guides-and-documentation" class="skill-detail" style="display:none;">
+                <p>My approach to documentation: delivering essential information into its most concise form - using <strong>graphics and key points over continuous text</strong> - enabling rapid access to important details without extensive searching.</p>
+            </div>
+
+			<div class="skill-item" onclick="toggleSkill('project-presentations')">
+                <h4>Presentations & Public Speaking<span class="arrow">&#9662;</span></h4>
+            </div>
+            <div id="project-presentations" class="skill-detail" style="display:none;">
+                <p>I excel in delivering project status presentations to different parties like stakeholders, showcasing a clear and confident style that effectively communicates progress and insights.</p>
             </div>
             <!-- More skills can be added here in the same pattern -->
         </div>
@@ -148,16 +176,18 @@
             <!-- Skill Items -->
             <div class="skill-item" onclick="toggleSkill('jira')">
 				<div class="skill-logo">
-					<img src="path/to/jira-logo.png" alt="JIRA" width="30" height="30"> <!-- Adjust the path to your logo -->
+					<img src="images/logos/jira-logo.png" alt="Jira" width="150" height="150">
+					<span class="arrow">&#9662;</span>
 				</div>
-                <h4>Jira <span class="arrow">&#9662;</span></h4>
-            </div>
-            <div id="jira" class="skill-detail" style="display:none;">
-                <p>Experience with tools like JIRA, Trello, and Asana. Familiar with agile and waterfall methodologies.</p>
-            </div>
-
+			</div>
+			<div id="jira" class="skill-detail" style="display:none;">
+				<p>Experience with tools like <strong>JIRA</strong>, Trello, and Asana. Familiar with agile and waterfall methodologies.</p>
+			</div>
             <div class="skill-item" onclick="toggleSkill('confluence')">
-                <h4>Confluence <span class="arrow">&#9662;</span></h4>
+                <div class="skill-logo">
+					<img src="images/logos/confluence-logo.png" alt="Confluence" width="140" height="140">
+					<span class="arrow">&#9662;</span>
+				</div>
             </div>
             <div id="confluence" class="skill-detail" style="display:none;">
                 <p>Comprehensive understanding of game mechanics, storytelling in games, and user experience design.</p>

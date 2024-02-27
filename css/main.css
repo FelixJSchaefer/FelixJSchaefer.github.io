@@ -1720,13 +1720,27 @@ header .logo a {
     align-items: center;
 }
 
-.skill-item .arrow {
-    transition: transform 0.3s ease;
+.skill-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.skill-logo img {
+    vertical-align: middle;
+    margin-right: 15px;
 }
 
 .skill-detail {
     display: none;
-    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+    margin-left: auto;
 }
 
 /* Rotate arrow when skill detail is visible */
