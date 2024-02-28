@@ -2403,8 +2403,6 @@ header .logo a {
   }
   
   .itch-io-embed iframe {
-    width: 100%; /* Adjust width as needed, or use max-width for a specific size */
-    height: 400px; /* Adjust height as needed */
     border: 0; /* Optional: Removes the border around the iframe */
     margin-top: 2rem; /* Space between the game summary and the iframe */
   }
