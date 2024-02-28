@@ -2198,11 +2198,6 @@ header .logo a {
     padding: 0;
     position: relative;
     overflow: hidden;
-	width: 30%;
-	margin-right: 5px;
-	margin-left: 5px;
-    margin-bottom: 30px; /* Space between rows */
-	background-color: lightgray; /* For visibility */
 }
 
 #portfolio .folio-item img {
@@ -2226,13 +2221,6 @@ header .logo a {
     -webkit-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-}
-
-#portfolio #folio-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-	background: #b50707;
 }
 
 #portfolio .folio-item-table {
@@ -2293,9 +2281,6 @@ header .logo a {
 @media only screen and (max-width: 1024px) {
     #portfolio .folio-title {
         font-size: 3.1rem;
-    }
-    .folio-item {
-        width: 100%; /* Force 1 item per row */
     }
 }
 
