@@ -125,45 +125,52 @@
     <div class="row about-content">
         <div class="col-six tab-full">
             <h3>Skills</h3>
-            <p>I have a broad experience across different project management tools.</p>
+            <p>My background includes extensive experience with multiple project management practices.</p>
             <!-- Skill Items -->
+
+			<div class="skill-item" onclick="toggleSkill('backlog')">
+                <h4>Backlog Management & Tracking</h4><span class="arrow">&#9662;</span>
+            </div>
+            <div id="backlog" class="skill-detail" style="display:none;">
+                <p>A well organised product backlog complete with task priorities, estimated efforts, clear descriptions, and assignees, is crucial to my workflow. It enables accurate tracking of project status, work velocity, and more.</p>
+            </div>
             <div class="skill-item" onclick="toggleSkill('sprint-planning')">
-                <h4>Sprint Planning<span class="arrow">&#9662;</span></h4>
+                <h4>Sprint Planning</h4><span class="arrow">&#9662;</span>
             </div>
             <div id="sprint-planning" class="skill-detail" style="display:none;">
                 <p>My sprint plannings consist of clear sprint goals including deadlines and assignees. Before each sprint, I review the goals with the team and adjust them if neccessary.</p>
             </div>
 
 			<div class="skill-item" onclick="toggleSkill('scrum-master')">
-                <h4>Scrum Master<span class="arrow">&#9662;</span></h4>
+                <h4>Scrum Master</h4><span class="arrow">&#9662;</span>
             </div>
             <div id="scrum-master" class="skill-detail" style="display:none;">
                 <p>Establishing a transparent scrum framework is crucial to my work ethic, with diligent participation in meetings such as daily stand-ups, sprint planning sessions, sprint reviews, and retrospectives being fundamental components.</p>
             </div>
 
 			<div class="skill-item" onclick="toggleSkill('sprint-reviews')">
-                <h4>Sprint Reviews & Retrospectives<span class="arrow">&#9662;</span></h4>
+                <h4>Sprint Reviews & Retrospectives</h4><span class="arrow">&#9662;</span>
             </div>
             <div id="sprint-reviews" class="skill-detail" style="display:none;">
                 <p>Conducting a thorough review of each sprint is crucial to me, focusing not only on the goals achieved but also on the team's morale and workflow dynamics.</p>
             </div>
 
-			<div class="skill-item" onclick="toggleSkill('risk-analyses')">
-                <h4>Risk Analyses<span class="arrow">&#9662;</span></h4>
+			<div class="skill-item" onclick="toggleSkill('risk-management')">
+                <h4>Risk Management</h4><span class="arrow">&#9662;</span>
             </div>
-            <div id="risk-analyses" class="skill-detail" style="display:none;">
+            <div id="risk-management" class="skill-detail" style="display:none;">
                 <p>I collaborate with all departments to achieve holistic risk coverage, simultaneously crafting an alternative strategy to ensure we always have a solid backup plan ready to go.</p>
             </div>
 
             <div class="skill-item" onclick="toggleSkill('guides-and-documentation')">
-                <h4>Guides & Documentation<span class="arrow">&#9662;</span></h4>
+                <h4>Guides & Documentation</h4><span class="arrow">&#9662;</span>
             </div>
             <div id="guides-and-documentation" class="skill-detail" style="display:none;">
                 <p>My approach to documentation: delivering essential information into its most concise form - using <strong>graphics and key points over continuous text</strong> - enabling rapid access to important details without extensive searching.</p>
             </div>
 
 			<div class="skill-item" onclick="toggleSkill('project-presentations')">
-                <h4>Presentations & Public Speaking<span class="arrow">&#9662;</span></h4>
+					<h4>Presentations & Public Speaking</h4><span class="arrow">&#9662;</span>
             </div>
             <div id="project-presentations" class="skill-detail" style="display:none;">
                 <p>I excel in delivering project status presentations to different parties like stakeholders, showcasing a clear and confident style that effectively communicates progress and insights.</p>
@@ -172,7 +179,7 @@
         </div>
 		<div class="col-six tab-full">
             <h3>Tools</h3>
-            <p>I have a broad experience across different project management tools.</p>
+            <p>I am using industry-standard software across various projects.</p>
             <!-- Skill Items -->
             <div class="skill-item" onclick="toggleSkill('jira')">
 				<div class="skill-logo">
@@ -181,16 +188,57 @@
 				</div>
 			</div>
 			<div id="jira" class="skill-detail" style="display:none;">
-				<p>Experience with tools like <strong>JIRA</strong>, Trello, and Asana. Familiar with agile and waterfall methodologies.</p>
+				<p>I utilize Jira for comprehensive task tracking, while also introducing and guiding the production team in its use.</p>
 			</div>
-            <div class="skill-item" onclick="toggleSkill('confluence')">
+            
+			<div class="skill-item" onclick="toggleSkill('confluence')">
                 <div class="skill-logo">
 					<img src="images/logos/confluence-logo.png" alt="Confluence" width="140" height="140">
 					<span class="arrow">&#9662;</span>
 				</div>
             </div>
             <div id="confluence" class="skill-detail" style="display:none;">
-                <p>Comprehensive understanding of game mechanics, storytelling in games, and user experience design.</p>
+                <p>I employ Confluence as a central hub for all documentation needs, including game design, meetings, and retrospective analyses.</p>
+            </div>
+
+			<div class="skill-item" onclick="toggleSkill('microsoft365')">
+                <div class="skill-logo">
+					<img src="images/logos/microsoft-365-logo.png" alt="Microsoft 365" width="140" height="140">
+					<span class="arrow">&#9662;</span>
+				</div>
+            </div>
+            <div id="microsoft365" class="skill-detail" style="display:none;">
+                <p>I am proficient in widely used office applications, including Microsoft's Word, Excel, PowerPoint and Outlook.</p>
+            </div>
+
+			<div class="skill-item" onclick="toggleSkill('microsoft365')">
+                <div class="skill-logo">
+					<img src="images/logos/google-drive-logo.png" alt="Microsoft 365" width="140" height="140">
+					<span class="arrow">&#9662;</span>
+				</div>
+            </div>
+            <div id="microsoft365" class="skill-detail" style="display:none;">
+                <p>In addition to Microsoft Office applications, I am also familiar with Google's suite, including Docs, Sheets, and Slides.</p>
+            </div>
+
+			<div class="skill-item" onclick="toggleSkill('unreal-engine')">
+                <div class="skill-logo">
+					<img src="images/logos/unreal-engine-logo.png" alt="Confluence" width="190" height="190">
+					<span class="arrow">&#9662;</span>
+				</div>
+            </div>
+            <div id="unreal-engine" class="skill-detail" style="display:none;">
+                <p>I have experience working with Unreal Engine 5, including implementing content and performing basic scripting tasks.</p>
+            </div>
+
+			<div class="skill-item" onclick="toggleSkill('helix-core')">
+                <div class="skill-logo">
+					<img src="images/logos/helix-core-logo.png" alt="Confluence" width="140" height="140">
+					<span class="arrow">&#9662;</span>
+				</div>
+            </div>
+            <div id="helix-core" class="skill-detail" style="display:none;">
+                <p>I have fundamental skills in submitting changelists through Perforce in Unreal Engine 5.</p>
             </div>
             <!-- More skills can be added here in the same pattern -->
         </div>

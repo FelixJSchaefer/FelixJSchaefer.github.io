@@ -308,9 +308,13 @@ function myFunction(imgs) {
   
 function toggleSkill(skillId) {
     var skill = document.getElementById(skillId);
+    var skillItem = skill.previousElementSibling; // Assuming the .skill-item is immediately before .skill-detail
+
     if (skill.style.display === "none") {
         skill.style.display = "block";
+        skillItem.classList.add("active");
     } else {
         skill.style.display = "none";
+        skillItem.classList.remove("active");
     }
 }
