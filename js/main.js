@@ -118,7 +118,7 @@
 	/*----------------------------------------------------*/
 	/*	Modal Popup
 	------------------------------------------------------*/
-   $('.item-wrap a').magnificPopup({
+   $('.project a').magnificPopup({
 
       type:'inline',
       fixedContentPos: false,

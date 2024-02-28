@@ -148,6 +148,7 @@ h1,
 }
 
 @media only screen and (max-width: 600px) {
+
     h1,
     .h01 {
         font-size: 2.6rem;
@@ -305,7 +306,7 @@ code {
     border-radius: 3px;
 }
 
-pre > code {
+pre>code {
     display: block;
     white-space: pre;
     line-height: 2;
@@ -313,7 +314,7 @@ pre > code {
     margin: 0;
 }
 
-pre.prettyprint > code {
+pre.prettyprint>code {
     border: none;
 }
 
@@ -732,15 +733,15 @@ input[type="radio"] {
     display: inline;
 }
 
-label > .label-text {
+label>.label-text {
     display: inline-block;
     margin-left: 1rem;
     font-family: "poppins-regular", sans-serif;
     line-height: inherit;
 }
 
-label > input[type="checkbox"],
-label > input[type="radio"] {
+label>input[type="checkbox"],
+label>input[type="radio"] {
     margin: 0;
     position: relative;
     top: 0.15rem;
@@ -972,17 +973,17 @@ input::-moz-focus-inner {
     margin: 0;
 }
 
-.lining dt + dt:before,
-.lining dd + dt:before {
+.lining dt+dt:before,
+.lining dd+dt:before {
     content: "\A";
     white-space: pre;
 }
 
-.lining dd + dd:before {
+.lining dd+dd:before {
     content: ", ";
 }
 
-.lining dd + dd:before {
+.lining dd+dd:before {
     content: ", ";
 }
 
@@ -999,7 +1000,7 @@ input::-moz-focus-inner {
     counter-reset: definitions;
 }
 
-.dictionary-style dt + dt:before {
+.dictionary-style dt+dt:before {
     content: ", ";
     margin-left: -0.2em;
 }
@@ -1497,7 +1498,7 @@ header .logo a {
     display: none;
 }
 
-.main-navigation > li {
+.main-navigation>li {
     display: block;
     height: auto;
     text-align: left;
@@ -1518,7 +1519,7 @@ header .logo a {
     padding-left: 1rem;
 }
 
-.main-navigation li.current > a {
+.main-navigation li.current>a {
     background: none;
     color: #8c62ff;
 }
@@ -1714,7 +1715,8 @@ header .logo a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0; /* Remove default margins to prevent layout shift */
+    margin: 0;
+    /* Remove default margins to prevent layout shift */
     flex-grow: 1;
     transition: transform 0.3s ease;
 }
@@ -1748,12 +1750,15 @@ header .logo a {
 }
 
 .skill-logo img:hover {
-    transform: scale(1.05); /* Slightly enlarge the logo on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge the logo on hover */
 }
 
 .skill-item h4:hover {
-    transform: scale(1.05); /* Slightly enlarge the logo on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge the logo on hover */
 }
+
 /**
  * responsive:
  * Intro
@@ -2188,89 +2193,57 @@ header .logo a {
  *
  * ------------------------------------------------------------------- 
  */
+
+.project-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: fit-content;
+    gap: 12px;
+    justify-content: center;
+}
+
+.project {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+
+.project .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #0009;
+    transform: translateX(-100%);
+    transition: transform 300ms ease;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.project .overlay h1 {
+    font-size: 2em;
+    margin: 0;
+    color: #fefefe;
+}
+
+.project .overlay h1 .subtitle {
+    font-size: 0.5em;
+    color: #b8b8b8;
+}
+
+.project:hover .overlay {
+    transform: translateX(0);
+}
+
 #portfolio {
     background: #f1f1f1;
     padding-top: 12rem;
     padding-bottom: 12rem;
-}
-
-#portfolio .folio-item {
-    padding: 0;
-    position: relative;
-    overflow: hidden;
-}
-
-#portfolio .folio-item img {
-    vertical-align: middle;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-}
-
-#portfolio .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-}
-
-#portfolio .folio-item-table {
-    display: table;
-    width: 100%;
-    height: 100%;
-}
-
-#portfolio .folio-item-cell {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    position: relative;
-    left: -100%;
-}
-
-#portfolio .folio-title {
-    color: #ffffff;
-    font-size: 3.3rem;
-    padding: 0 3rem;
-    margin-bottom: 0;
-}
-
-#portfolio .folio-types {
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-    font-family: "poppins-regular", sans-serif;
-    font-size: 1.2rem;
-    letter-spacing: 0.1rem;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-#portfolio .folio-item:hover .overlay {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-#portfolio .folio-item:hover .folio-item-cell {
-    left: 0;
-}
-
-#portfolio .folio-item:hover img {
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
 }
 
 /**
@@ -2278,26 +2251,10 @@ header .logo a {
  * portfolio
  * ------------------------------------------------------------------- 
  */
-@media only screen and (max-width: 1024px) {
-    #portfolio .folio-title {
-        font-size: 3.1rem;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    #portfolio .folio-title {
-        font-size: 2.5rem;
-    }
-
-    .folio-item {
-        flex: 0 0 100%; /* Force items to take full width of the container */
-        max-width: 100%; /* Ensure items do not exceed container width */
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    #portfolio .folio-title {
-        font-size: 2.2rem;
+@media screen and (max-width: 600px) {
+    .project-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
     }
 }
 
@@ -2305,8 +2262,9 @@ header .logo a {
  * Popup Modal - (_layout.scss)
  * ------------------------------------------------------------------
  */
+
 .popup-modal {
-    max-width: 550px;
+    max-width: 960px;
     background: #ffffff;
     position: relative;
     margin: 0 auto;
@@ -2388,6 +2346,109 @@ header .logo a {
         width: auto;
         margin: 0 20px;
     }
+}
+
+#general-information {
+    background: #ffffff;
+    padding: 4rem 0;
+  }
+  
+  #general-information .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  #general-information .info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  #general-information .info-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-basis: 100%; /* Takes full width to center icons */
+    max-width: 50%; /* Limits width to half of the container */
+  }
+  
+  #general-information .icon-item {
+    width: calc(50% - 10px); /* Two items per row, adjust the spacing as needed */
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  #general-information .game-summary {
+    flex-basis: 100%; /* Takes full width */
+    max-width: 50%; /* Limits width to half of the container */
+    padding-left: 2rem; /* Optional spacing */
+  }
+  
+  #general-information .icon-item img {
+    max-width: 100px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  #general-information h4 {
+    font-weight: 300; /* Thin font */
+  }
+  
+  #general-information p {
+    font-weight: 700; /* Bold font */
+  }
+
+  .itch-io-embed {
+    text-align: center; /* Center the iframe container */
+  }
+  
+  .itch-io-embed iframe {
+    width: 100%; /* Adjust width as needed, or use max-width for a specific size */
+    height: 400px; /* Adjust height as needed */
+    border: 0; /* Optional: Removes the border around the iframe */
+    margin-top: 2rem; /* Space between the game summary and the iframe */
+  }
+  
+  @media (max-width: 768px) {
+    #general-information .info-icons,
+    #general-information .game-summary {
+      max-width: 100%; /* Stack items on smaller screens */
+    }
+  
+    #general-information .icon-item {
+      width: 100%; /* Full width for each icon item on smaller screens */
+    }
+  }
+
+#game-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4rem 0;
+}
+
+#game-information .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-summary,
+.key-features {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.game-summary {
+    max-width: 60%;
+}
+
+.game-summary,
+.key-features {
+    max-width: 100%;
+    margin-right: 0;
 }
 
 /**
@@ -2934,7 +2995,7 @@ header .logo a {
     transform: translateX(0.45rem);
 }
 
-.s-loader > div {
+.s-loader>div {
     width: 1rem;
     height: 1rem;
     background-color: #ffffff;
@@ -2956,6 +3017,7 @@ header .logo a {
 }
 
 @-webkit-keyframes sk-bouncedelay {
+
     0%,
     80%,
     100% {
@@ -2972,6 +3034,7 @@ header .logo a {
 }
 
 @keyframes sk-bouncedelay {
+
     0%,
     80%,
     100% {
@@ -3140,12 +3203,6 @@ footer .copyright span:last-child::after {
     clear: both;
 }
 
-/* The expanding image container (positioning is needed to position the close button and the text) */
-.container {
-    position: relative;
-    display: none;
-}
-
 /* Expanding image text */
 #imgtext {
     position: absolute;
@@ -3164,4 +3221,5 @@ footer .copyright span:last-child::after {
     font-size: 35px;
     cursor: pointer;
 }
+
 /*# sourceMappingURL=main.css.map */

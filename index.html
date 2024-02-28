@@ -38,6 +38,7 @@
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#6f31c1">
 	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
@@ -110,147 +111,166 @@
 
 	<!-- about section
    ================================================== -->
-   <section id="about">
-    <div class="row section-intro">
-        <div class="col-twelve">
-            <h5>About</h5>
-            <h1>Let me introduce myself.</h1>
-            <div class="intro-info">
-                <img src="images/profile-pic.jpg" alt="Profile Picture">
-                <p class="lead">Hi, I'm an aspiring game producer passionate about organizing the development of captivating gaming experiences. My versatility is my strongest asset — I have a broad skill set that extends beyond production to include comprehensive game design and in-engine work, enabling me to contribute effectively across various aspects of game development.</p>
-            </div>
-        </div>
-    </div> <!-- /section-intro -->
+	<section id="about">
+		<div class="row section-intro">
+			<div class="col-twelve">
+				<h5>About</h5>
+				<h1>Let me introduce myself.</h1>
+				<div class="intro-info">
+					<img src="images/profile-pic.jpg" alt="Profile Picture">
+					<p class="lead">Hi, I'm an aspiring game producer passionate about organizing the development of
+						captivating gaming experiences. My versatility is my strongest asset — I have a broad skill set
+						that extends beyond production to include comprehensive game design and in-engine work, enabling
+						me to contribute effectively across various aspects of game development.</p>
+				</div>
+			</div>
+		</div> <!-- /section-intro -->
 
-    <div class="row about-content">
-        <div class="col-six tab-full">
-            <h3>Skills</h3>
-            <p>My background includes extensive experience with multiple project management practices.</p>
-            <!-- Skill Items -->
+		<div class="row about-content">
+			<div class="col-six tab-full">
+				<h3>Skills</h3>
+				<p>My background includes extensive experience with multiple project management practices.</p>
+				<!-- Skill Items -->
 
-			<div class="skill-item" onclick="toggleSkill('backlog')">
-                <h4>Backlog Management & Tracking</h4><span class="arrow">&#9662;</span>
-            </div>
-            <div id="backlog" class="skill-detail" style="display:none;">
-                <p>A well organised product backlog complete with task priorities, estimated efforts, clear descriptions, and assignees, is crucial to my workflow. It enables accurate tracking of project status, work velocity, and more.</p>
-            </div>
-            <div class="skill-item" onclick="toggleSkill('sprint-planning')">
-                <h4>Sprint Planning</h4><span class="arrow">&#9662;</span>
-            </div>
-            <div id="sprint-planning" class="skill-detail" style="display:none;">
-                <p>My sprint plannings consist of clear sprint goals including deadlines and assignees. Before each sprint, I review the goals with the team and adjust them if neccessary.</p>
-            </div>
+				<div class="skill-item" onclick="toggleSkill('backlog')">
+					<h4>Backlog Management & Tracking</h4><span class="arrow">&#9662;</span>
+				</div>
+				<div id="backlog" class="skill-detail" style="display:none;">
+					<p>A well organised product backlog complete with task priorities, estimated efforts, clear
+						descriptions, and assignees, is crucial to my workflow. It enables accurate tracking of project
+						status, work velocity, and more.</p>
+				</div>
+				<div class="skill-item" onclick="toggleSkill('sprint-planning')">
+					<h4>Sprint Planning</h4><span class="arrow">&#9662;</span>
+				</div>
+				<div id="sprint-planning" class="skill-detail" style="display:none;">
+					<p>My sprint plannings consist of clear sprint goals including deadlines and assignees. Before each
+						sprint, I review the goals with the team and adjust them if neccessary.</p>
+				</div>
 
-			<div class="skill-item" onclick="toggleSkill('scrum-master')">
-                <h4>Scrum Master</h4><span class="arrow">&#9662;</span>
-            </div>
-            <div id="scrum-master" class="skill-detail" style="display:none;">
-                <p>Establishing a transparent scrum framework is crucial to my work ethic, with diligent participation in meetings such as daily stand-ups, sprint planning sessions, sprint reviews, and retrospectives being fundamental components.</p>
-            </div>
+				<div class="skill-item" onclick="toggleSkill('scrum-master')">
+					<h4>Scrum Master</h4><span class="arrow">&#9662;</span>
+				</div>
+				<div id="scrum-master" class="skill-detail" style="display:none;">
+					<p>Establishing a transparent scrum framework is crucial to my work ethic, with diligent
+						participation in meetings such as daily stand-ups, sprint planning sessions, sprint reviews, and
+						retrospectives being fundamental components.</p>
+				</div>
 
-			<div class="skill-item" onclick="toggleSkill('sprint-reviews')">
-                <h4>Sprint Reviews & Retrospectives</h4><span class="arrow">&#9662;</span>
-            </div>
-            <div id="sprint-reviews" class="skill-detail" style="display:none;">
-                <p>Conducting a thorough review of each sprint is crucial to me, focusing not only on the goals achieved but also on the team's morale and workflow dynamics.</p>
-            </div>
+				<div class="skill-item" onclick="toggleSkill('sprint-reviews')">
+					<h4>Sprint Reviews & Retrospectives</h4><span class="arrow">&#9662;</span>
+				</div>
+				<div id="sprint-reviews" class="skill-detail" style="display:none;">
+					<p>Conducting a thorough review of each sprint is crucial to me, focusing not only on the goals
+						achieved but also on the team's morale and workflow dynamics.</p>
+				</div>
 
-			<div class="skill-item" onclick="toggleSkill('risk-management')">
-                <h4>Risk Management</h4><span class="arrow">&#9662;</span>
-            </div>
-            <div id="risk-management" class="skill-detail" style="display:none;">
-                <p>I collaborate with all departments to achieve holistic risk coverage, simultaneously crafting an alternative strategy to ensure we always have a solid backup plan ready to go.</p>
-            </div>
+				<div class="skill-item" onclick="toggleSkill('risk-management')">
+					<h4>Risk Management</h4><span class="arrow">&#9662;</span>
+				</div>
+				<div id="risk-management" class="skill-detail" style="display:none;">
+					<p>I collaborate with all departments to achieve holistic risk coverage, simultaneously crafting an
+						alternative strategy to ensure we always have a solid backup plan ready to go.</p>
+				</div>
 
-            <div class="skill-item" onclick="toggleSkill('guides-and-documentation')">
-                <h4>Guides & Documentation</h4><span class="arrow">&#9662;</span>
-            </div>
-            <div id="guides-and-documentation" class="skill-detail" style="display:none;">
-                <p>My approach to documentation: delivering essential information into its most concise form - using <strong>graphics and key points over continuous text</strong> - enabling rapid access to important details without extensive searching.</p>
-            </div>
+				<div class="skill-item" onclick="toggleSkill('guides-and-documentation')">
+					<h4>Guides & Documentation</h4><span class="arrow">&#9662;</span>
+				</div>
+				<div id="guides-and-documentation" class="skill-detail" style="display:none;">
+					<p>My approach to documentation: delivering essential information into its most concise form - using
+						<strong>graphics and key points over continuous text</strong> - enabling rapid access to
+						important details without extensive searching.
+					</p>
+				</div>
 
-			<div class="skill-item" onclick="toggleSkill('project-presentations')">
+				<div class="skill-item" onclick="toggleSkill('project-presentations')">
 					<h4>Presentations & Public Speaking</h4><span class="arrow">&#9662;</span>
-            </div>
-            <div id="project-presentations" class="skill-detail" style="display:none;">
-                <p>I excel in delivering project status presentations to different parties like stakeholders, showcasing a clear and confident style that effectively communicates progress and insights.</p>
-            </div>
-            <!-- More skills can be added here in the same pattern -->
-        </div>
-		<div class="col-six tab-full">
-            <h3>Tools</h3>
-            <p>I am using industry-standard software across various projects.</p>
-            <!-- Skill Items -->
-            <div class="skill-item" onclick="toggleSkill('jira')">
-				<div class="skill-logo">
-					<img src="images/logos/jira-logo.png" alt="Jira" width="150" height="150">
-					<span class="arrow">&#9662;</span>
 				</div>
+				<div id="project-presentations" class="skill-detail" style="display:none;">
+					<p>I excel in delivering project status presentations to different parties like stakeholders,
+						showcasing a clear and confident style that effectively communicates progress and insights.</p>
+				</div>
+				<!-- More skills can be added here in the same pattern -->
 			</div>
-			<div id="jira" class="skill-detail" style="display:none;">
-				<p>I utilize Jira for comprehensive task tracking, while also introducing and guiding the production team in its use.</p>
+			<div class="col-six tab-full">
+				<h3>Tools</h3>
+				<p>I am using industry-standard software across various projects.</p>
+				<!-- Skill Items -->
+				<div class="skill-item" onclick="toggleSkill('jira')">
+					<div class="skill-logo">
+						<img src="images/logos/jira-logo.png" alt="Jira" width="150" height="150">
+						<span class="arrow">&#9662;</span>
+					</div>
+				</div>
+				<div id="jira" class="skill-detail" style="display:none;">
+					<p>I utilize Jira for comprehensive task tracking, while also introducing and guiding the production
+						team in its use.</p>
+				</div>
+
+				<div class="skill-item" onclick="toggleSkill('confluence')">
+					<div class="skill-logo">
+						<img src="images/logos/confluence-logo.png" alt="Confluence" width="140" height="140">
+						<span class="arrow">&#9662;</span>
+					</div>
+				</div>
+				<div id="confluence" class="skill-detail" style="display:none;">
+					<p>I employ Confluence as a central hub for all documentation needs, including game design,
+						meetings, and retrospective analyses.</p>
+				</div>
+
+				<div class="skill-item" onclick="toggleSkill('microsoft365')">
+					<div class="skill-logo">
+						<img src="images/logos/microsoft-365-logo.png" alt="Microsoft 365" width="140" height="140">
+						<span class="arrow">&#9662;</span>
+					</div>
+				</div>
+				<div id="microsoft365" class="skill-detail" style="display:none;">
+					<p>I am proficient in widely used office applications, including Microsoft's Word, Excel, PowerPoint
+						and Outlook.</p>
+				</div>
+
+				<div class="skill-item" onclick="toggleSkill('microsoft365')">
+					<div class="skill-logo">
+						<img src="images/logos/google-drive-logo.png" alt="Microsoft 365" width="140" height="140">
+						<span class="arrow">&#9662;</span>
+					</div>
+				</div>
+				<div id="microsoft365" class="skill-detail" style="display:none;">
+					<p>In addition to Microsoft Office applications, I am also familiar with Google's suite, including
+						Docs, Sheets, and Slides.</p>
+				</div>
+
+				<div class="skill-item" onclick="toggleSkill('unreal-engine')">
+					<div class="skill-logo">
+						<img src="images/logos/unreal-engine-logo.png" alt="Confluence" width="190" height="190">
+						<span class="arrow">&#9662;</span>
+					</div>
+				</div>
+				<div id="unreal-engine" class="skill-detail" style="display:none;">
+					<p>I have experience working with Unreal Engine 5, including implementing content and performing
+						basic scripting tasks.</p>
+				</div>
+
+				<div class="skill-item" onclick="toggleSkill('helix-core')">
+					<div class="skill-logo">
+						<img src="images/logos/helix-core-logo.png" alt="Confluence" width="140" height="140">
+						<span class="arrow">&#9662;</span>
+					</div>
+				</div>
+				<div id="helix-core" class="skill-detail" style="display:none;">
+					<p>I have fundamental skills in submitting changelists through Perforce in Unreal Engine 5.</p>
+				</div>
+				<!-- More skills can be added here in the same pattern -->
 			</div>
-            
-			<div class="skill-item" onclick="toggleSkill('confluence')">
-                <div class="skill-logo">
-					<img src="images/logos/confluence-logo.png" alt="Confluence" width="140" height="140">
-					<span class="arrow">&#9662;</span>
-				</div>
-            </div>
-            <div id="confluence" class="skill-detail" style="display:none;">
-                <p>I employ Confluence as a central hub for all documentation needs, including game design, meetings, and retrospective analyses.</p>
-            </div>
+		</div>
 
-			<div class="skill-item" onclick="toggleSkill('microsoft365')">
-                <div class="skill-logo">
-					<img src="images/logos/microsoft-365-logo.png" alt="Microsoft 365" width="140" height="140">
-					<span class="arrow">&#9662;</span>
-				</div>
-            </div>
-            <div id="microsoft365" class="skill-detail" style="display:none;">
-                <p>I am proficient in widely used office applications, including Microsoft's Word, Excel, PowerPoint and Outlook.</p>
-            </div>
-
-			<div class="skill-item" onclick="toggleSkill('microsoft365')">
-                <div class="skill-logo">
-					<img src="images/logos/google-drive-logo.png" alt="Microsoft 365" width="140" height="140">
-					<span class="arrow">&#9662;</span>
-				</div>
-            </div>
-            <div id="microsoft365" class="skill-detail" style="display:none;">
-                <p>In addition to Microsoft Office applications, I am also familiar with Google's suite, including Docs, Sheets, and Slides.</p>
-            </div>
-
-			<div class="skill-item" onclick="toggleSkill('unreal-engine')">
-                <div class="skill-logo">
-					<img src="images/logos/unreal-engine-logo.png" alt="Confluence" width="190" height="190">
-					<span class="arrow">&#9662;</span>
-				</div>
-            </div>
-            <div id="unreal-engine" class="skill-detail" style="display:none;">
-                <p>I have experience working with Unreal Engine 5, including implementing content and performing basic scripting tasks.</p>
-            </div>
-
-			<div class="skill-item" onclick="toggleSkill('helix-core')">
-                <div class="skill-logo">
-					<img src="images/logos/helix-core-logo.png" alt="Confluence" width="140" height="140">
-					<span class="arrow">&#9662;</span>
-				</div>
-            </div>
-            <div id="helix-core" class="skill-detail" style="display:none;">
-                <p>I have fundamental skills in submitting changelists through Perforce in Unreal Engine 5.</p>
-            </div>
-            <!-- More skills can be added here in the same pattern -->
-        </div>
-    </div>
-
-    <div class="row button-section">
-        <div class="col-twelve">
-            <a href="#contact" title="Contact Me" class="button stroke smoothscroll">Contact Me</a>
-            <!-- <a href="#" title="Download CV" class="button button-primary">Download CV</a> -->
-        </div>
-    </div>
-</section> <!-- /process-->
+		<div class="row button-section">
+			<div class="col-twelve">
+				<a href="#contact" title="Contact Me" class="button stroke smoothscroll">Contact Me</a>
+				<!-- <a href="#" title="Download CV" class="button button-primary">Download CV</a> -->
+			</div>
+		</div>
+	</section> <!-- /process-->
 
 
 	<!-- resume Section
@@ -435,157 +455,162 @@
 
 	<!-- Portfolio Section
    ================================================== -->
-   <section id="portfolio">
-    <div class="row section-intro">
-        <div class="col-twelve">
-            <h5>Project Showcase</h5>
-            <h1>Check out some of my works.</h1>
-            <p class="lead">I've worked on several projects in different roles. Click on each project to learn more about my involvement within the development.</p>
-        </div>
-    </div> <!-- /section-intro-->
+	<section id="portfolio">
+		<div class="row section-intro">
+			<div class="col-twelve">
+				<h5>Project Showcase</h5>
+				<h1>Check out some of my works.</h1>
+				<p class="lead">I've worked on several projects in different roles. Click on each project to learn more
+					about my involvement within the development.</p>
+			</div>
+		</div> <!-- /section-intro-->
 
-    <div class="row portfolio-content">
-        <div class="col-twelve">
-            <!-- Corrected portfolio-wrapper -->
-            <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
-                <!-- folio-item -->
-                <div class="bgrid folio-item">
-                    <div class="item-wrap">
-                        <img src="images/portfolio/cozytales.png" alt="Cozy Tales">
-                        <a href="#modal-01" class="overlay">
-                            <div class="folio-item-table">
-                                <div class="folio-item-cell">
-                                    <h3 class="folio-title">Cozy Tales</h3>
-                                    <span class="folio-types">Game Production</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div> <!-- /folio-item -->
-
-				<div class="bgrid folio-item">
-					<div class="item-wrap">
-						<img src="images/portfolio/drilly42.png" alt="Drill Y-42">
-						<a href="#modal-02" class="overlay">
-							<div class="folio-item-table">
-								<div class="folio-item-cell">
-									<h3 class="folio-title">Drill Y-42</h3>
-									<span class="folio-types">
-										Game Production
-									</span>
-								</div>
+		<div class="row portfolio-content">
+			<div class="col-twelve">
+				<div class="project-wrapper">
+					<div class="project">
+						<a href="#modal-01">
+							<img src="images/portfolio/cozytales.png" alt="Cozy Tales">
+							<div class="overlay">
+								<h1>Cozy Tales<br><span class="subtitle">Game Production</span></h1>
 							</div>
 						</a>
 					</div>
-				</div> <!-- /folio-item -->
+					<div class="project"><img src="images/portfolio/drilly42.png" alt="Drill Y-42">
+						<div class="overlay">
+							<h1>Drill Y-42<br><span class="subtitle">Game Production</span></h1>
+						</div>
+					</div>
+					<div class="project"><img src="images/portfolio/theoverride.png" alt="The Override">
+						<div class="overlay">
+							<h1>The Override<br><span class="subtitle">Game Design</span></h1>
+						</div>
+					</div>
+				</div>
 
-				<div class="bgrid folio-item">
-					<div class="item-wrap">
-						<img src="images/portfolio/theoverride.png" alt="The Override">
-						<a href="#modal-03" class="overlay">
-							<div class="folio-item-table">
-								<div class="folio-item-cell">
-									<h3 class="folio-title">The Override</h3>
-									<span class="folio-types">
-										Game Design
-									</span>
+
+
+				<!-- modal popups - begin
+	            ============================================================= -->
+				<div id="modal-01" class="popup-modal slider mfp-hide">
+
+					<div class="media">
+						<img src="images/portfolio/modals/m-cozytales.png" alt="Cozy Tales" />
+					</div>
+
+					<div class="description-box">
+						<section id="general-information">
+							<div class="container">
+								<div class="info-section">
+									<div class="info-icons">
+										<div class="icon-item">
+											<img src="images/projectdetails/unrealengine.png" alt="Unreal Engine 5">
+											<h4>ENGINE</h4>
+											<p>Unreal Engine 5</p>
+										</div>
+										<div class="icon-item">
+											<img src="images/projectdetails/windows.png" alt="Platform">
+											<h4>PLATFORM</h4>
+											<p>PC</p>
+										</div>
+										<div class="icon-item">
+											<img src="images/projectdetails/player.png" alt="Number of Players">
+											<h4>NUMBER OF PLAYERS</h4>
+											<p>Single Player</p>
+										</div>
+										<div class="icon-item">
+											<img src="images/projectdetails/genre.png" alt="Genre">
+											<h4>GENRE</h4>
+											<p>Adventure</p>
+										</div>
+										<div class="icon-item">
+											<img src="images/projectdetails/team.png" alt="Team Size">
+											<h4>TEAM SIZE</h4>
+											<p>10 (3 Designers, 3 Engineers, 4 Artists)</p>
+										</div>
+									</div>
+									<div class="game-summary">
+										<h2>Game Summary</h2>
+										<p>Cozy Tales is a cozy open world exploration game. The player traverses a
+											beautifully stylized landscape filled with hidden landmarks and scenic
+											beauty.
+										</p>
+										<p>Important landmarks can be marked to create maps for adventurers.
+											Also, unique items and artifacts throughout the world can be collected.</p>
+										<p>The game has a strong focus on relaxation and enjoyment, with no combat or
+											high-stress situations.</p>
+										<div class="itch-io-embed">
+											<iframe frameborder="0" src="https://itch.io/embed/2506709" width="552" height="167"><a href="https://s4g.itch.io/cozytales">Cozy Tales by School for Games</a></iframe>
+										</div>
+									</div>
 								</div>
 							</div>
-						</a>
+						</section>
 					</div>
-				</div> <!-- /folio-item -->
-				
-				
 
-							<!-- modal popups - begin
-	            ============================================================= -->
-							<div id="modal-01" class="popup-modal slider mfp-hide">
+				</div> <!-- /modal-01 -->
 
-								<div class="media">
-									<img src="images/portfolio/modals/m-cozytales.png" alt="Cozy Tales" />
-								</div>
+				<div id="modal-02" class="popup-modal slider mfp-hide">
 
-								<div class="description-box">
-									<h4>Cozy Tales</h4>
-									<p>This game was developed within a student semester project. On this project I
-										worked
-										as the Producer. I've also been involved in game design documentation as well as
-										a lot of in-engine work (e.g. content & menu implementation)</p>
+					<div class="media">
+						<img src="images/portfolio/modals/m-drilly42.jpg" alt="Drill Y-42" />
+					</div>
 
-									<div class="categories">Game Production</div>
-									<div class="categories">Game Design</div>
-								</div>
+					<div class="description-box">
+						<h4>Drill Y-42</h4>
+						<p>This game was developed within a student semester project. On this project I
+							worked
+							as the Producer and Teamlead, managing workflow and backlog as well as hosting
+							and
+							improving SCRUM meetings.</p>
 
-								<div class="link-box">
-									<a href="https://s4g.itch.io/cozytales" target="_blank">Game Showcase</a>
-									<a href="#" class="popup-modal-dismiss">Close</a>
-								</div>
+						<div class="categories">Game Production</div>
+						<div class="categories">Narrative Design</div>
+					</div>
 
-							</div> <!-- /modal-01 -->
+					<div class="link-box">
+						<a href="https://s4g.itch.io/drill" target="_blank">Game Showcase</a>
+						<a href="#" class="popup-modal-dismiss">Close</a>
+					</div>
 
-							<div id="modal-02" class="popup-modal slider mfp-hide">
+				</div> <!-- /modal-02 -->
 
-								<div class="media">
-									<img src="images/portfolio/modals/m-drilly42.jpg" alt="Drill Y-42" />
-								</div>
+				<div id="modal-03" class="popup-modal slider mfp-hide">
 
-								<div class="description-box">
-									<h4>Drill Y-42</h4>
-									<p>This game was developed within a student semester project. On this project I
-										worked
-										as the Producer and Teamlead, managing workflow and backlog as well as hosting
-										and
-										improving SCRUM meetings.</p>
+					<div class="media">
+						<img src="images/portfolio/modals/m-theoverride.png" alt="The Override" />
+					</div>
 
-									<div class="categories">Game Production</div>
-									<div class="categories">Narrative Design</div>
-								</div>
+					<div class="description-box">
+						<h4>The Override</h4>
+						<p>This game has been my first student project. My roles have been quite versatile.
+							I've
+							been responsible for the game design - mainly for the narrative and sound design
+							as
+							well as the game design documentation. I've also been involved in the technical
+							work
+							within the Godot engine.</p>
 
-								<div class="link-box">
-									<a href="https://s4g.itch.io/drill" target="_blank">Game Showcase</a>
-									<a href="#" class="popup-modal-dismiss">Close</a>
-								</div>
+						<div class="categories">Game Design</div>
+						<div class="categories">Narrative Design</div>
+						<div class="categories">Sound Design</div>
+					</div>
 
-							</div> <!-- /modal-02 -->
+					<div class="link-box">
+						<a href="https://s4g.itch.io/theoverride" target="_blank">Game Showcase</a>
+						<a href="#" class="popup-modal-dismiss">Close</a>
+					</div>
 
-							<div id="modal-03" class="popup-modal slider mfp-hide">
-
-								<div class="media">
-									<img src="images/portfolio/modals/m-theoverride.png" alt="The Override" />
-								</div>
-
-								<div class="description-box">
-									<h4>The Override</h4>
-									<p>This game has been my first student project. My roles have been quite versatile.
-										I've
-										been responsible for the game design - mainly for the narrative and sound design
-										as
-										well as the game design documentation. I've also been involved in the technical
-										work
-										within the Godot engine.</p>
-
-									<div class="categories">Game Design</div>
-									<div class="categories">Narrative Design</div>
-									<div class="categories">Sound Design</div>
-								</div>
-
-								<div class="link-box">
-									<a href="https://s4g.itch.io/theoverride" target="_blank">Game Showcase</a>
-									<a href="#" class="popup-modal-dismiss">Close</a>
-								</div>
-
-							</div> <!-- /modal-03 -->
+				</div> <!-- /modal-03 -->
 
 
-							<!-- modal popups - end
+				<!-- modal popups - end
 	            ============================================================= -->
 
 
-					</div> <!-- /twelve -->
+			</div> <!-- /twelve -->
 
-				</div> <!-- /portfolio-content -->
-				
-			</div> <!-- /portfolio-wrapper -->
+		</div> <!-- /portfolio-content -->
 
 	</section> <!-- /portfolio -->
 
@@ -599,7 +624,7 @@
 				<h5>Contact</h5>
 				<h1>I'd Love To Hear From You.</h1>
 
-				<p class="lead">Always feel free to contact me via email or phone. You could also just drop me a message
+				<p class="lead">Always feel free to contact me via email or drop me a message
 					on LinkedIn or other social media!</p>
 
 			</div>
@@ -663,7 +688,7 @@
 					<i class="icon-pin"></i>
 				</div>
 
-				<h5>Based in:</h5>
+				<h5>Based in</h5>
 
 				<p>
 					Hamburg, Germany
@@ -727,7 +752,7 @@
 
 			<div class="col-six tab-full">
 				<div class="copyright">
-					<span>© Copyright Felix Schäfer.</span>
+					<span>© Copyright Felix Schäfer</span>
 					<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>
 				</div>
 			</div>
