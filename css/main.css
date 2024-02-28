@@ -1723,7 +1723,7 @@ header .logo a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-	width: 100%;
+    width: 100%;
 }
 
 .skill-logo img {
@@ -2198,6 +2198,11 @@ header .logo a {
     padding: 0;
     position: relative;
     overflow: hidden;
+	width: 30%;
+	margin-right: 5px;
+	margin-left: 5px;
+    margin-bottom: 30px; /* Space between rows */
+	background-color: lightgray; /* For visibility */
 }
 
 #portfolio .folio-item img {
@@ -2221,6 +2226,13 @@ header .logo a {
     -webkit-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+}
+
+#portfolio #folio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	background: #b50707;
 }
 
 #portfolio .folio-item-table {
@@ -2282,11 +2294,19 @@ header .logo a {
     #portfolio .folio-title {
         font-size: 3.1rem;
     }
+    .folio-item {
+        width: 100%; /* Force 1 item per row */
+    }
 }
 
 @media only screen and (max-width: 768px) {
     #portfolio .folio-title {
         font-size: 2.5rem;
+    }
+
+    .folio-item {
+        flex: 0 0 100%; /* Force items to take full width of the container */
+        max-width: 100%; /* Ensure items do not exceed container width */
     }
 }
 
