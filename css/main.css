@@ -2347,124 +2347,107 @@ header .logo a {
     }
 }
 
+/* Base styles */
 #general-information {
-    background: #ffffff;
-    padding: 4rem 0;
+  background: #ffffff;
+  padding: 4rem 0;
+}
+
+.overview-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .general-info-section,
 .summary-website-section {
-  flex: 1;
-  margin-right: 20px;
+  display: flex;
 }
 
-#general-information .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-#general-information .info-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.info-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-#general-information .info-icons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-basis: 100%; /* Takes full width to center icons */
-    max-width: 50%; /* Limits width to half of the container */
+.icon-item {
+  flex-basis: calc(50% - 10px); /* Two items per row with gap */
+  text-align: center;
 }
 
-#general-information .icon-item {
-    width: calc(
-        50% - 10px
-    ); /* Two items per row, adjust the spacing as needed */
-    margin-bottom: 1rem;
-    text-align: center;
+.game-summary,
+.official-website {
+  margin-bottom: 20px;
 }
 
-#general-information .game-summary {
-    flex-basis: 100%; /* Takes full width */
-    max-width: 50%; /* Limits width to half of the container */
-    padding-left: 2rem; /* Optional spacing */
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .overview-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .general-info-section,
+  .summary-website-section {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .icon-item {
+    flex-basis: 100%; /* Full width on smaller screens */
+  }
+
+  .info-section {
+    justify-content: center;
+  }
 }
 
+/* Additional styles */
 #general-information .icon-item img {
-    max-width: 100px; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */
+  max-width: 80px; /* Adjust as needed */
+  max-height: 80px;
+}
+
+#general-information h1,
+#general-information h3,
+#general-information h4 {
+    text-align: center;
+    margin-bottom: 1rem; /* Adjust as needed */
 }
 
 #general-information h1 {
-    text-align: center;
-    margin-bottom: 3rem; /* Adjust the bottom margin as needed */
+  margin-bottom: 3rem; /* Adjust the bottom margin as needed */
 }
 
 #general-information h4 {
-    font-weight: 300; /* Thin font */
+  font-weight: 300; /* Thin font */
 }
 
 #general-information p {
-    font-weight: 700; /* Bold font */
+  font-weight: 700; /* Bold font */
 }
 
 .itch-io-embed {
-    text-align: center; /* Center the iframe container */
+  text-align: center; /* Center the iframe container */
 }
 
 .itch-io-embed iframe {
-    border: 0; /* Optional: Removes the border around the iframe */
-    margin-top: 2rem; /* Space between the game summary and the iframe */
-}
-
-@media (max-width: 768px) {
-    #general-information .info-icons,
-    #general-information .game-summary {
-        max-width: 100%; /* Stack items on smaller screens */
-    }
-
-    #general-information .icon-item {
-        width: 100%; /* Full width for each icon item on smaller screens */
-    }
+  border: 0; /* Removes the border around the iframe */
+  margin-top: 2rem; /* Space between the game summary and the iframe */
 }
 
 .divider {
     border-top: 2px solid #7f7f7f; /* Change color as needed */
     width: 100%; /* Or a specific pixel width if you want the line shorter */
     margin: 4rem auto; /* Adjust the space above and below the divider */
-}
-
-#game-information {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 4rem 0;
-}
-
-#game-information .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.game-summary,
-.key-features {
-    flex: 1;
-    margin-right: 2rem;
-}
-
-.game-summary {
-    max-width: 60%;
-}
-
-.game-summary,
-.key-features {
-    max-width: 100%;
-    margin-right: 0;
 }
 
 #responsibilities .container {
@@ -2500,9 +2483,7 @@ header .logo a {
     }
 
     #responsibilities .roadmap,
-    #responsibilities .management-methodologies,
-    #responsibilities .gantt-chart,
-    #responsibilities .risk-list {
+    #responsibilities .gantt-chart, {
         grid-column: span 1;
     }
 }
