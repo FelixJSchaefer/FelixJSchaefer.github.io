@@ -148,7 +148,6 @@ h1,
 }
 
 @media only screen and (max-width: 600px) {
-
     h1,
     .h01 {
         font-size: 2.6rem;
@@ -306,7 +305,7 @@ code {
     border-radius: 3px;
 }
 
-pre>code {
+pre > code {
     display: block;
     white-space: pre;
     line-height: 2;
@@ -314,7 +313,7 @@ pre>code {
     margin: 0;
 }
 
-pre.prettyprint>code {
+pre.prettyprint > code {
     border: none;
 }
 
@@ -733,15 +732,15 @@ input[type="radio"] {
     display: inline;
 }
 
-label>.label-text {
+label > .label-text {
     display: inline-block;
     margin-left: 1rem;
     font-family: "poppins-regular", sans-serif;
     line-height: inherit;
 }
 
-label>input[type="checkbox"],
-label>input[type="radio"] {
+label > input[type="checkbox"],
+label > input[type="radio"] {
     margin: 0;
     position: relative;
     top: 0.15rem;
@@ -973,17 +972,17 @@ input::-moz-focus-inner {
     margin: 0;
 }
 
-.lining dt+dt:before,
-.lining dd+dt:before {
+.lining dt + dt:before,
+.lining dd + dt:before {
     content: "\A";
     white-space: pre;
 }
 
-.lining dd+dd:before {
+.lining dd + dd:before {
     content: ", ";
 }
 
-.lining dd+dd:before {
+.lining dd + dd:before {
     content: ", ";
 }
 
@@ -1000,7 +999,7 @@ input::-moz-focus-inner {
     counter-reset: definitions;
 }
 
-.dictionary-style dt+dt:before {
+.dictionary-style dt + dt:before {
     content: ", ";
     margin-left: -0.2em;
 }
@@ -1498,7 +1497,7 @@ header .logo a {
     display: none;
 }
 
-.main-navigation>li {
+.main-navigation > li {
     display: block;
     height: auto;
     text-align: left;
@@ -1519,7 +1518,7 @@ header .logo a {
     padding-left: 1rem;
 }
 
-.main-navigation li.current>a {
+.main-navigation li.current > a {
     background: none;
     color: #8c62ff;
 }
@@ -2351,72 +2350,91 @@ header .logo a {
 #general-information {
     background: #ffffff;
     padding: 4rem 0;
-  }
-  
-  #general-information .container {
+}
+
+.general-info-section,
+.summary-website-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+#general-information .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-  }
-  
-  #general-information .info-section {
+}
+
+#general-information .info-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  
-  #general-information .info-icons {
+}
+
+#general-information .info-icons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     flex-basis: 100%; /* Takes full width to center icons */
     max-width: 50%; /* Limits width to half of the container */
-  }
-  
-  #general-information .icon-item {
-    width: calc(50% - 10px); /* Two items per row, adjust the spacing as needed */
+}
+
+#general-information .icon-item {
+    width: calc(
+        50% - 10px
+    ); /* Two items per row, adjust the spacing as needed */
     margin-bottom: 1rem;
     text-align: center;
-  }
-  
-  #general-information .game-summary {
+}
+
+#general-information .game-summary {
     flex-basis: 100%; /* Takes full width */
     max-width: 50%; /* Limits width to half of the container */
     padding-left: 2rem; /* Optional spacing */
-  }
-  
-  #general-information .icon-item img {
+}
+
+#general-information .icon-item img {
     max-width: 100px; /* Adjust as needed */
     height: auto; /* Maintain aspect ratio */
-  }
-  
-  #general-information h4 {
-    font-weight: 300; /* Thin font */
-  }
-  
-  #general-information p {
-    font-weight: 700; /* Bold font */
-  }
+}
 
-  .itch-io-embed {
+#general-information h1 {
+    text-align: center;
+    margin-bottom: 3rem; /* Adjust the bottom margin as needed */
+}
+
+#general-information h4 {
+    font-weight: 300; /* Thin font */
+}
+
+#general-information p {
+    font-weight: 700; /* Bold font */
+}
+
+.itch-io-embed {
     text-align: center; /* Center the iframe container */
-  }
-  
-  .itch-io-embed iframe {
+}
+
+.itch-io-embed iframe {
     border: 0; /* Optional: Removes the border around the iframe */
     margin-top: 2rem; /* Space between the game summary and the iframe */
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     #general-information .info-icons,
     #general-information .game-summary {
-      max-width: 100%; /* Stack items on smaller screens */
+        max-width: 100%; /* Stack items on smaller screens */
     }
-  
+
     #general-information .icon-item {
-      width: 100%; /* Full width for each icon item on smaller screens */
+        width: 100%; /* Full width for each icon item on smaller screens */
     }
-  }
+}
+
+.divider {
+    border-top: 2px solid #7f7f7f; /* Change color as needed */
+    width: 100%; /* Or a specific pixel width if you want the line shorter */
+    margin: 4rem auto; /* Adjust the space above and below the divider */
+}
 
 #game-information {
     display: flex;
@@ -2447,6 +2465,46 @@ header .logo a {
 .key-features {
     max-width: 100%;
     margin-right: 0;
+}
+
+#responsibilities .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+#responsibilities h1 {
+    text-align: center;
+    margin-bottom: 3rem; /* Adjust the bottom margin as needed */
+}
+
+#responsibilities .content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates three columns */
+    grid-gap: 20px;
+}
+
+#responsibilities .roadmap,
+#responsibilities .management-methodologies {
+    grid-column: span 1; /* These items take up two columns */
+}
+
+#responsibilities .gantt-chart,
+#responsibilities .risk-list {
+    grid-column: span 1; /* These items take up one column */
+}
+
+@media (max-width: 768px) {
+    #responsibilities .content-grid {
+        grid-template-columns: 1fr; /* Stack everything in one column on mobile */
+    }
+
+    #responsibilities .roadmap,
+    #responsibilities .management-methodologies,
+    #responsibilities .gantt-chart,
+    #responsibilities .risk-list {
+        grid-column: span 1;
+    }
 }
 
 /**
@@ -2993,7 +3051,7 @@ header .logo a {
     transform: translateX(0.45rem);
 }
 
-.s-loader>div {
+.s-loader > div {
     width: 1rem;
     height: 1rem;
     background-color: #ffffff;
@@ -3015,7 +3073,6 @@ header .logo a {
 }
 
 @-webkit-keyframes sk-bouncedelay {
-
     0%,
     80%,
     100% {
@@ -3032,7 +3089,6 @@ header .logo a {
 }
 
 @keyframes sk-bouncedelay {
-
     0%,
     80%,
     100% {
