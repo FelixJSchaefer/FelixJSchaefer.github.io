@@ -73,7 +73,7 @@ body {
 
 body {
     background: #151515;
-    font-family: "lora-regular", serif;
+    font-family: "poppins-regular", sans-serif;
     font-size: 1.7rem;
     line-height: 3rem;
     color: #6e6e6e;
@@ -195,7 +195,7 @@ p img {
 }
 
 p.lead {
-    font-family: "lora-regular", serif;
+    font-family: "poppins-regular", sans-serif;
     font-size: 2rem;
     line-height: 1.8;
     color: #888888;
@@ -224,7 +224,7 @@ i {
 
 strong,
 b {
-    font-family: "lora-bold", serif;
+    font-family: "poppins-bold", sans-serif;
 }
 
 small {
@@ -410,7 +410,7 @@ table {
     border-width: 0;
     width: 100%;
     max-width: 100%;
-    font-family: "lora-regular", sans-serif;
+    font-family: "poppins-regular", sans-serif;
 }
 
 th,
@@ -1617,7 +1617,7 @@ header .logo a {
 }
 
 .intro-content .intro-position {
-    font-family: "lora-regular", serif;
+    font-family: "poppins-regular", sans-serif;
     font-size: 1.7rem;
     line-height: 2.4rem;
     text-transform: uppercase;
@@ -2324,7 +2324,7 @@ header .logo a {
     display: block;
     text-align: center;
     float: left;
-    width: 50%;
+    width: 100%;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -2383,7 +2383,6 @@ header .logo a {
     flex-basis: calc(50% - 10px);
     /* Two items per row with gap */
     text-align: center;
-    width: 50%;
     /* Adjust width to have two items per row */
     box-sizing: border-box;
 }
@@ -2414,11 +2413,9 @@ header .logo a {
     }
 
     .icon-item {
-        width: 50%;
+        width: 0%;
         /* Adjust width to have two items per row */
         box-sizing: border-box;
-        flex: 0 0 50%;
-        /* Do not grow or shrink, and start with 50% of the container's width */
         max-width: 50%;
         /* Set a maximum width for the items */
     }
@@ -2474,7 +2471,7 @@ header .logo a {
 .divider {
     border-top: 2px solid #7f7f7f;
     /* Change color as needed */
-    width: 100%;
+    width: 90%;
     /* Or a specific pixel width if you want the line shorter */
     margin: 4rem auto;
     /* Adjust the space above and below the divider */
@@ -2498,6 +2495,83 @@ header .logo a {
     /* Creates three columns */
     grid-gap: 20px;
 }
+
+/* Style the image */
+.clickable-image {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* Style the modal */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px; /* You can set a max-width */
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-header {
+    background-color: transparent; /* Make the header background transparent */
+    position: absolute; /* Position it absolutely relative to the modal */
+    top: 0; /* Align to the top of the modal */
+    left: 0; /* Align to the left of the modal */
+    right: 0; /* Align to the right of the modal */
+    z-index: 1000; /* Ensure it is above other content */
+  }
+  
+  /* Style for the close button */
+  .modal-close-btn {
+    font-size: 3em; /* Adjust size to your preference */
+    color: #FFF; /* Color of the 'X' can be white or any other color */
+    position: absolute; /* Position it absolutely within the header */
+    top: -60px; /* Align to the top of the header */
+    right: -35px; /* Right align with some padding */
+    background: none; /* No background */
+    border: none; /* No border */
+    padding: 0.5em; /* Add some padding for easier clicking */
+    cursor: pointer;
+    text-decoration: none; /* Remove text decoration if it's a link */
+  }
+  
+  /* Ensure the close button is visible and has a hover effect */
+  .modal-close-btn:hover {
+    color: #8c62ff; /* Light color for hover state */
+  }
+  
+  
 
 @media (max-width: 768px) {
     #responsibilities .content-grid {
@@ -2573,6 +2647,7 @@ header .logo a {
 /* content at start */
 .mfp-fade.mfp-wrap .mfp-content {
     opacity: 0;
+    padding-top: 50px;
     -webkit-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
     transform: translateY(-100%);

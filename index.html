@@ -38,7 +38,6 @@
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#6f31c1">
 	<meta name="theme-color" content="#ffffff">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
@@ -493,7 +492,10 @@
 				<!-- modal popups - begin
 	            ============================================================= -->
 				<div id="modal-01" class="popup-modal slider mfp-hide">
-
+					<div class="modal-header">
+						<!-- The close button (X) -->
+						<a class="modal-close-btn" onclick="$.magnificPopup.close()">&times;</a>
+					  </div>
 					<div class="media">
 						<img src="images/portfolio/modals/m-cozytales.png" alt="Cozy Tales" />
 					</div>
@@ -588,7 +590,14 @@
 									</div>
 									<div class="project-images-1">
 										<img src="images/projectdetails/cozytales/project-timeline.png"
-											alt="Project Timeline" id="expandableImage" class="normalImage" onclick="expandImage()">
+											alt="Project Timeline" id="expandableImage" class="clickable-image" onclick="showModal(this)">
+											<div id="imageModal" class="modal">
+												<!-- The Close Button -->
+												<span class="close" onclick="closeModal()">&times;</span>
+											  
+												<!-- Modal Content (The Image) -->
+												<img class="modal-content" id="modalImage">
+											  </div>
 										<img src="images/projectdetails/cozytales/milestones.png" alt="Milestones">
 									</div>
 									<div class="project-images-2">
@@ -636,10 +645,11 @@
 								</div>
 							</div>
 						</section>
-
 					</div>
-
-				</div> <!-- /modal-01 -->
+					<div class="link-box">
+						<a href="#" class="popup-modal-dismiss">Close</a>
+					</div>
+				</div> <!-- /modal-02 -->
 
 				<div id="modal-02" class="popup-modal slider mfp-hide">
 
