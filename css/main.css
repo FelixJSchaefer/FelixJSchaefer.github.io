@@ -2483,7 +2483,7 @@ header .logo a {
     }
 
     #responsibilities .roadmap,
-    #responsibilities .gantt-chart, {
+    #responsibilities .gantt-chart {
         grid-column: span 1;
     }
 }
