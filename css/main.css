@@ -2384,6 +2384,7 @@ header .logo a {
     text-align: center;
     /* Adjust width to have two items per row */
     box-sizing: border-box;
+    min-width: 150px;
 }
 
 .game-summary,
@@ -2415,8 +2416,7 @@ header .logo a {
         width: 0%;
         /* Adjust width to have two items per row */
         box-sizing: border-box;
-        max-width: 50%;
-        /* Set a maximum width for the items */
+    min-width: 50px;
     }
 
     .info-section {
