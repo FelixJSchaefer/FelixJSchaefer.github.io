@@ -475,15 +475,20 @@
 							</div>
 						</a>
 					</div>
-					<div class="project"><img src="images/portfolio/drilly42.png" alt="Drill Y-42">
-						<div class="overlay">
-							<h1>Drill Y-42<br><span class="subtitle">Game Production</span></h1>
-						</div>
+					<div class="project">
+						<a href="#modal-02">
+							<img src="images/portfolio/drilly42.png" alt="Drill Y-42">
+							<div class="overlay">
+								<h1>Drill Y-42<br><span class="subtitle">Game Production</span></h1>
+							</div>
+						</a>
 					</div>
-					<div class="project"><img src="images/portfolio/theoverride.png" alt="The Override">
-						<div class="overlay">
-							<h1>The Override<br><span class="subtitle">Game Design</span></h1>
-						</div>
+					<div class="project">
+						<a href="#modal-03"><img src="images/portfolio/theoverride.png" alt="The Override">
+							<div class="overlay">
+								<h1>The Override<br><span class="subtitle">Game Design</span></h1>
+							</div>
+						</a>
 					</div>
 				</div>
 
@@ -495,7 +500,7 @@
 					<div class="modal-header">
 						<!-- The close button (X) -->
 						<a class="modal-close-btn" onclick="$.magnificPopup.close()">&times;</a>
-					  </div>
+					</div>
 					<div class="media">
 						<img src="images/portfolio/modals/m-cozytales.png" alt="Cozy Tales" />
 					</div>
@@ -590,19 +595,56 @@
 									</div>
 									<div class="project-images-1">
 										<img src="images/projectdetails/cozytales/project-timeline.png"
-											alt="Project Timeline" id="expandableImage" class="clickable-image" onclick="showModal(this)">
-											<div id="imageModal" class="modal">
-												<!-- The Close Button -->
-												<span class="close" onclick="closeModal()">&times;</span>
-											  
-												<!-- Modal Content (The Image) -->
-												<img class="modal-content" id="modalImage">
-											  </div>
-										<img src="images/projectdetails/cozytales/milestones.png" alt="Milestones">
+											alt="Project Timeline" id="expandableImage" class="clickable-image"
+											data-description="Project timeline plan" onclick="showModal(this)">
+										<p class="description">Project timeline plan</p>
+										<div id="imageModal" class="modal">
+											<!-- The Close Button -->
+											<span class="close" onclick="closeModal()">&times;</span>
+
+											<!-- Modal Content (The Image) -->
+											<img class="modal-content" id="modalImage">
+											<p class="description"></p>
+										</div>
+										<img src="images/projectdetails/cozytales/milestones.png" alt="Milestones"
+											id="expandableImage" class="clickable-image"
+											data-description="Milestone overview in Codecks" onclick="showModal(this)">
+										<p class="description">Milestone overview in Codecks</p>
+										<div id="imageModal" class="modal">
+											<!-- The Close Button -->
+											<span class="close" onclick="closeModal()">&times;</span>
+
+											<!-- Modal Content (The Image) -->
+											<img class="modal-content" id="modalImage">
+											<p class="description"></p>
+										</div>
 									</div>
 									<div class="project-images-2">
-										<img src="images/projectdetails/cozytales/sprint-structure.png" alt="Workflow">
-										<img src="images/projectdetails/cozytales/workflow.png" alt="Project Backlog">
+										<img src="images/projectdetails/cozytales/sprint-structure.png" alt="Workflow"
+											id="expandableImage" class="clickable-image"
+											data-description="Sprint structure with Scrum meetings"
+											onclick="showModal(this)">
+										<p class="description">Sprint structure with Scrum meetings</p>
+										<div id="imageModal" class="modal">
+											<!-- The Close Button -->
+											<span class="close" onclick="closeModal()">&times;</span>
+
+											<!-- Modal Content (The Image) -->
+											<img class="modal-content" id="modalImage">
+											<p class="description"></p>
+										</div>
+										<img src="images/projectdetails/cozytales/workflow.png" alt="Project Backlog"
+											id="expandableImage" class="clickable-image"
+											data-description="Task workflow definition" onclick="showModal(this)">
+										<p class="description">Task workflow definition</p>
+										<div id="imageModal" class="modal">
+											<!-- The Close Button -->
+											<span class="close" onclick="closeModal()">&times;</span>
+
+											<!-- Modal Content (The Image) -->
+											<img class="modal-content" id="modalImage">
+											<p class="description"></p>
+										</div>
 									</div>
 									<div class="responsibilities-description-2">
 										<h3>Agile Workflow Management</h3>
@@ -638,9 +680,250 @@
 									</div>
 									<div class="project-images-3">
 										<img src="images/projectdetails/cozytales/game-design-documents.png"
-											alt="Game Design Documents">
+											alt="Game Design Documents" id="expandableImage" class="clickable-image"
+											data-description="Game Design documentation & task desctiption"
+											onclick="showModal(this)">
+										<p class="description">Game Design documentation & task desctiption</p>
+										<div id="imageModal" class="modal">
+											<!-- The Close Button -->
+											<span class="close" onclick="closeModal()">&times;</span>
+
+											<!-- Modal Content (The Image) -->
+											<img class="modal-content" id="modalImage">
+											<p class="description"></p>
+										</div>
 										<img src="images/projectdetails/cozytales/design-diagram.png"
-											alt="Design Diagram">
+											alt="Design Diagram" id="expandableImage" class="clickable-image"
+											data-description="Diagram of a feature functionality"
+											onclick="showModal(this)">
+										<p class="description">Diagram of a feature functionality</p>
+										<div id="imageModal" class="modal">
+											<!-- The Close Button -->
+											<span class="close" onclick="closeModal()">&times;</span>
+
+											<!-- Modal Content (The Image) -->
+											<img class="modal-content" id="modalImage">
+											<p class="description"></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="link-box">
+						<a href="#" class="popup-modal-dismiss">Close</a>
+					</div>
+				</div> <!-- /modal-01 -->
+
+				<div id="modal-02" class="popup-modal slider mfp-hide">
+					<div class="modal-header">
+						<!-- The close button (X) -->
+						<a class="modal-close-btn" onclick="$.magnificPopup.close()">&times;</a>
+					</div>
+					<div class="media">
+						<img src="images/portfolio/modals/m-drilly42.jpg" alt="Cozy Tales" />
+					</div>
+					<div class="description-box">
+						<section id="general-information">
+							<h1>Overview</h1>
+							<div class="overview-container">
+								<div class="general-info-section">
+									<div class="info-section">
+										<h3>General Information</h3>
+										<div class="info-icons">
+											<div class="icon-item">
+												<img src="images/projectdetails/unrealengine.png" alt="Unreal Engine 5">
+												<h4>ENGINE</h4>
+												<p>Unreal Engine 5</p>
+											</div>
+											<div class="icon-item">
+												<img src="images/projectdetails/windows.png" alt="Platform">
+												<h4>PLATFORM</h4>
+												<p>PC</p>
+											</div>
+											<div class="icon-item">
+												<img src="images/projectdetails/player.png" alt="Number of Players">
+												<h4>NUMBER OF PLAYERS</h4>
+												<p>Single Player</p>
+											</div>
+											<div class="icon-item">
+												<img src="images/projectdetails/genre.png" alt="Genre">
+												<h4>GENRE</h4>
+												<p>Adventure</p>
+											</div>
+											<div class="icon-item">
+												<img src="images/projectdetails/team.png" alt="Team Size">
+												<h4>TEAM SIZE</h4>
+												<p>10 Members</p>
+											</div>
+											<div class="icon-item">
+												<img src="images/projectdetails/duration.png" alt="Team Size">
+												<h4>PROJECT DURATION</h4>
+												<p>10 Weeks</p>
+											</div>
+										</div>
+									</div>
+									<div class="summary-website-section">
+										<div class="game-summary">
+											<h3>Game Summary</h3>
+											<p>Cozy Tales is a cozy open world exploration game. The player traverses a
+												beautifully stylized landscape filled with hidden landmarks and scenic
+												beauty.
+											</p>
+											<p>Important landmarks can be marked to create maps for adventurers.
+												Also, unique items and artifacts throughout the world can be collected.
+											</p>
+											<p>The game has a strong focus on relaxation and enjoyment, with no combat
+												or
+												high-stress situations.</p>
+											<div class="official-website">
+												<div class="divider"></div>
+												<h3>Official Website</h3>
+												<div class="itch-io-embed">
+													<iframe frameborder="0"
+														src="https://itch.io/embed/2506709?bg_color=fac667&amp;fg_color=000000&amp;link_color=ff3a3a&amp;border_color=6e86a0"
+														width="208" height="167"><a
+															href="https://s4g.itch.io/cozytales">Cozy
+															Tales by School for Games</a></iframe>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</section>
+						<section id="responsibilities">
+							<div class="container">
+								<h1>Role & Responsibilities</h1>
+								<div class="content-grid">
+									<div class="responsibilities-description-1">
+										<h3>Roadmap & Milestones Planning</h3>
+										<ul>
+											<li>Outlined key objectives and segmented them into attainable milestones by
+												crafting a comprehensive Roadmap.</li>
+											<li>Engaged in in-depth discussions with the development team to establish a
+												realistic timeline, ensuring resource allocation and flexibility for
+												project adjustments.</li>
+											<li>Assessed the development pipeline for potential bottlenecks and
+												dependencies to maintain smooth progression.</li>
+											<li>Guided decision-making through meticulous risk assessments and
+												leveraging an understanding of team capabilities, ensuring the project
+												stayed on a realistic and successful path.</li>
+										</ul>
+									</div>
+									<div class="project-images-1">
+										<img src="images/projectdetails/cozytales/project-timeline.png"
+											alt="Project Timeline" id="expandableImage" class="clickable-image"
+											data-description="Project timeline plan" onclick="showModal(this)">
+										<p class="description">Project timeline plan</p>
+										<div id="imageModal" class="modal">
+											<!-- The Close Button -->
+											<span class="close" onclick="closeModal()">&times;</span>
+
+											<!-- Modal Content (The Image) -->
+											<img class="modal-content" id="modalImage">
+											<p class="description"></p>
+										</div>
+										<img src="images/projectdetails/cozytales/milestones.png" alt="Milestones"
+											id="expandableImage" class="clickable-image"
+											data-description="Milestone overview in Codecks" onclick="showModal(this)">
+										<p class="description">Milestone overview in Codecks</p>
+										<div id="imageModal" class="modal">
+											<!-- The Close Button -->
+											<span class="close" onclick="closeModal()">&times;</span>
+
+											<!-- Modal Content (The Image) -->
+											<img class="modal-content" id="modalImage">
+											<p class="description"></p>
+										</div>
+									</div>
+									<div class="project-images-2">
+										<img src="images/projectdetails/cozytales/sprint-structure.png" alt="Workflow"
+											id="expandableImage" class="clickable-image"
+											data-description="Sprint structure with Scrum meetings"
+											onclick="showModal(this)">
+										<p class="description">Sprint structure with Scrum meetings</p>
+										<div id="imageModal" class="modal">
+											<!-- The Close Button -->
+											<span class="close" onclick="closeModal()">&times;</span>
+
+											<!-- Modal Content (The Image) -->
+											<img class="modal-content" id="modalImage">
+											<p class="description"></p>
+										</div>
+										<img src="images/projectdetails/cozytales/workflow.png" alt="Project Backlog"
+											id="expandableImage" class="clickable-image"
+											data-description="Task workflow definition" onclick="showModal(this)">
+										<p class="description">Task workflow definition</p>
+										<div id="imageModal" class="modal">
+											<!-- The Close Button -->
+											<span class="close" onclick="closeModal()">&times;</span>
+
+											<!-- Modal Content (The Image) -->
+											<img class="modal-content" id="modalImage">
+											<p class="description"></p>
+										</div>
+									</div>
+									<div class="responsibilities-description-2">
+										<h3>Agile Workflow Management</h3>
+										<ul>
+											<li>Maintained oversight of the product backlog and monitored sprint
+												progress, ensuring a cohesive development process.</li>
+											<li>Facilitated the adoption of <strong>Codecks</strong> for project
+												tracking, providing comprehensive training and documentation to
+												streamline team engagement with the tool.</li>
+											<li>Established the framework for project structure and team dynamics, each
+												team member with clear roles and accountability.</li>
+											<li>Integrated an Agile methodology tailored to our team's unique qualities
+												and requirements, specifically employing Scrum principles with a
+												designated Product Owner.</li>
+										</ul>
+									</div>
+									<div class="responsibilities-description-3">
+										<h3>Game Design & Engine Work</h3>
+										<ul>
+											<li><strong>Documentation:</strong> Systematically documented game design
+												features, detailing task specifications and completion criteria.</li>
+											<li><strong>Narrative Design:</strong> Collaborated with the Game Design
+												team to enhance narrative development, formulating engaging quests and
+												writing dialogue and backstory elements.</li>
+											<li><strong>Programming:</strong> Developed and programmed interactive
+												features and user interfaces, including an AI letter-writing system,
+												menus (main, options, pause), as well as an end-screen with trigger
+												functionality.</li>
+											<li><strong>Content Integration:</strong> Executed the integration of
+												diverse content into Unreal Engine, ranging from 3D models and quest
+												elements to dialogue text and voice-over files.</li>
+										</ul>
+									</div>
+									<div class="project-images-3">
+										<img src="images/projectdetails/cozytales/game-design-documents.png"
+											alt="Game Design Documents" id="expandableImage" class="clickable-image"
+											data-description="Game Design documentation & task desctiption"
+											onclick="showModal(this)">
+										<p class="description">Game Design documentation & task desctiption</p>
+										<div id="imageModal" class="modal">
+											<!-- The Close Button -->
+											<span class="close" onclick="closeModal()">&times;</span>
+
+											<!-- Modal Content (The Image) -->
+											<img class="modal-content" id="modalImage">
+											<p class="description"></p>
+										</div>
+										<img src="images/projectdetails/cozytales/design-diagram.png"
+											alt="Design Diagram" id="expandableImage" class="clickable-image"
+											data-description="Diagram of a feature functionality"
+											onclick="showModal(this)">
+										<p class="description">Diagram of a feature functionality</p>
+										<div id="imageModal" class="modal">
+											<!-- The Close Button -->
+											<span class="close" onclick="closeModal()">&times;</span>
+
+											<!-- Modal Content (The Image) -->
+											<img class="modal-content" id="modalImage">
+											<p class="description"></p>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -650,60 +933,224 @@
 						<a href="#" class="popup-modal-dismiss">Close</a>
 					</div>
 				</div> <!-- /modal-02 -->
-
-				<div id="modal-02" class="popup-modal slider mfp-hide">
-
-					<div class="media">
-						<img src="images/portfolio/modals/m-drilly42.jpg" alt="Drill Y-42" />
-					</div>
-
-					<div class="description-box">
-						<h4>Drill Y-42</h4>
-						<p>This game was developed within a student semester project. On this project I
-							worked
-							as the Producer and Teamlead, managing workflow and backlog as well as hosting
-							and
-							improving SCRUM meetings.</p>
-
-						<div class="categories">Game Production</div>
-						<div class="categories">Narrative Design</div>
-					</div>
-
-					<div class="link-box">
-						<a href="https://s4g.itch.io/drill" target="_blank">Game Showcase</a>
-						<a href="#" class="popup-modal-dismiss">Close</a>
-					</div>
-
-				</div> <!-- /modal-02 -->
-
 				<div id="modal-03" class="popup-modal slider mfp-hide">
-
+					<div class="modal-header">
+						<!-- The close button (X) -->
+						<a class="modal-close-btn" onclick="$.magnificPopup.close()">&times;</a>
+					</div>
 					<div class="media">
-						<img src="images/portfolio/modals/m-theoverride.png" alt="The Override" />
+						<img src="images/portfolio/modals/m-theoverride.png" alt="Cozy Tales" />
 					</div>
-
 					<div class="description-box">
-						<h4>The Override</h4>
-						<p>This game has been my first student project. My roles have been quite versatile.
-							I've
-							been responsible for the game design - mainly for the narrative and sound design
-							as
-							well as the game design documentation. I've also been involved in the technical
-							work
-							within the Godot engine.</p>
+						<section id="general-information">
+							<h1>Overview</h1>
+							<div class="overview-container">
+								<div class="general-info-section">
+									<div class="info-section">
+										<h3>General Information</h3>
+										<div class="info-icons">
+											<div class="icon-item">
+												<img src="images/projectdetails/unrealengine.png" alt="Unreal Engine 5">
+												<h4>ENGINE</h4>
+												<p>Unreal Engine 5</p>
+											</div>
+											<div class="icon-item">
+												<img src="images/projectdetails/windows.png" alt="Platform">
+												<h4>PLATFORM</h4>
+												<p>PC</p>
+											</div>
+											<div class="icon-item">
+												<img src="images/projectdetails/player.png" alt="Number of Players">
+												<h4>NUMBER OF PLAYERS</h4>
+												<p>Single Player</p>
+											</div>
+											<div class="icon-item">
+												<img src="images/projectdetails/genre.png" alt="Genre">
+												<h4>GENRE</h4>
+												<p>Adventure</p>
+											</div>
+											<div class="icon-item">
+												<img src="images/projectdetails/team.png" alt="Team Size">
+												<h4>TEAM SIZE</h4>
+												<p>10 Members</p>
+											</div>
+											<div class="icon-item">
+												<img src="images/projectdetails/duration.png" alt="Team Size">
+												<h4>PROJECT DURATION</h4>
+												<p>10 Weeks</p>
+											</div>
+										</div>
+									</div>
+									<div class="summary-website-section">
+										<div class="game-summary">
+											<h3>Game Summary</h3>
+											<p>Cozy Tales is a cozy open world exploration game. The player traverses a
+												beautifully stylized landscape filled with hidden landmarks and scenic
+												beauty.
+											</p>
+											<p>Important landmarks can be marked to create maps for adventurers.
+												Also, unique items and artifacts throughout the world can be collected.
+											</p>
+											<p>The game has a strong focus on relaxation and enjoyment, with no combat
+												or
+												high-stress situations.</p>
+											<div class="official-website">
+												<div class="divider"></div>
+												<h3>Official Website</h3>
+												<div class="itch-io-embed">
+													<iframe frameborder="0"
+														src="https://itch.io/embed/2506709?bg_color=fac667&amp;fg_color=000000&amp;link_color=ff3a3a&amp;border_color=6e86a0"
+														width="208" height="167"><a
+															href="https://s4g.itch.io/cozytales">Cozy
+															Tales by School for Games</a></iframe>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="divider"></div>
+						</section>
+						<section id="responsibilities">
+							<div class="container">
+								<h1>Role & Responsibilities</h1>
+								<div class="content-grid">
+									<div class="responsibilities-description-1">
+										<h3>Roadmap & Milestones Planning</h3>
+										<ul>
+											<li>Outlined key objectives and segmented them into attainable milestones by
+												crafting a comprehensive Roadmap.</li>
+											<li>Engaged in in-depth discussions with the development team to establish a
+												realistic timeline, ensuring resource allocation and flexibility for
+												project adjustments.</li>
+											<li>Assessed the development pipeline for potential bottlenecks and
+												dependencies to maintain smooth progression.</li>
+											<li>Guided decision-making through meticulous risk assessments and
+												leveraging an understanding of team capabilities, ensuring the project
+												stayed on a realistic and successful path.</li>
+										</ul>
+									</div>
+									<div class="project-images-1">
+										<img src="images/projectdetails/cozytales/project-timeline.png"
+											alt="Project Timeline" id="expandableImage" class="clickable-image"
+											data-description="Project timeline plan" onclick="showModal(this)">
+										<p class="description">Project timeline plan</p>
+										<div id="imageModal" class="modal">
+											<!-- The Close Button -->
+											<span class="close" onclick="closeModal()">&times;</span>
 
-						<div class="categories">Game Design</div>
-						<div class="categories">Narrative Design</div>
-						<div class="categories">Sound Design</div>
+											<!-- Modal Content (The Image) -->
+											<img class="modal-content" id="modalImage">
+											<p class="description"></p>
+										</div>
+										<img src="images/projectdetails/cozytales/milestones.png" alt="Milestones"
+											id="expandableImage" class="clickable-image"
+											data-description="Milestone overview in Codecks" onclick="showModal(this)">
+										<p class="description">Milestone overview in Codecks</p>
+										<div id="imageModal" class="modal">
+											<!-- The Close Button -->
+											<span class="close" onclick="closeModal()">&times;</span>
+
+											<!-- Modal Content (The Image) -->
+											<img class="modal-content" id="modalImage">
+											<p class="description"></p>
+										</div>
+									</div>
+									<div class="project-images-2">
+										<img src="images/projectdetails/cozytales/sprint-structure.png" alt="Workflow"
+											id="expandableImage" class="clickable-image"
+											data-description="Sprint structure with Scrum meetings"
+											onclick="showModal(this)">
+										<p class="description">Sprint structure with Scrum meetings</p>
+										<div id="imageModal" class="modal">
+											<!-- The Close Button -->
+											<span class="close" onclick="closeModal()">&times;</span>
+
+											<!-- Modal Content (The Image) -->
+											<img class="modal-content" id="modalImage">
+											<p class="description"></p>
+										</div>
+										<img src="images/projectdetails/cozytales/workflow.png" alt="Project Backlog"
+											id="expandableImage" class="clickable-image"
+											data-description="Task workflow definition" onclick="showModal(this)">
+										<p class="description">Task workflow definition</p>
+										<div id="imageModal" class="modal">
+											<!-- The Close Button -->
+											<span class="close" onclick="closeModal()">&times;</span>
+
+											<!-- Modal Content (The Image) -->
+											<img class="modal-content" id="modalImage">
+											<p class="description"></p>
+										</div>
+									</div>
+									<div class="responsibilities-description-2">
+										<h3>Agile Workflow Management</h3>
+										<ul>
+											<li>Maintained oversight of the product backlog and monitored sprint
+												progress, ensuring a cohesive development process.</li>
+											<li>Facilitated the adoption of <strong>Codecks</strong> for project
+												tracking, providing comprehensive training and documentation to
+												streamline team engagement with the tool.</li>
+											<li>Established the framework for project structure and team dynamics, each
+												team member with clear roles and accountability.</li>
+											<li>Integrated an Agile methodology tailored to our team's unique qualities
+												and requirements, specifically employing Scrum principles with a
+												designated Product Owner.</li>
+										</ul>
+									</div>
+									<div class="responsibilities-description-3">
+										<h3>Game Design & Engine Work</h3>
+										<ul>
+											<li><strong>Documentation:</strong> Systematically documented game design
+												features, detailing task specifications and completion criteria.</li>
+											<li><strong>Narrative Design:</strong> Collaborated with the Game Design
+												team to enhance narrative development, formulating engaging quests and
+												writing dialogue and backstory elements.</li>
+											<li><strong>Programming:</strong> Developed and programmed interactive
+												features and user interfaces, including an AI letter-writing system,
+												menus (main, options, pause), as well as an end-screen with trigger
+												functionality.</li>
+											<li><strong>Content Integration:</strong> Executed the integration of
+												diverse content into Unreal Engine, ranging from 3D models and quest
+												elements to dialogue text and voice-over files.</li>
+										</ul>
+									</div>
+									<div class="project-images-3">
+										<img src="images/projectdetails/cozytales/game-design-documents.png"
+											alt="Game Design Documents" id="expandableImage" class="clickable-image"
+											data-description="Game Design documentation & task desctiption"
+											onclick="showModal(this)">
+										<p class="description">Game Design documentation & task desctiption</p>
+										<div id="imageModal" class="modal">
+											<!-- The Close Button -->
+											<span class="close" onclick="closeModal()">&times;</span>
+
+											<!-- Modal Content (The Image) -->
+											<img class="modal-content" id="modalImage">
+											<p class="description"></p>
+										</div>
+										<img src="images/projectdetails/cozytales/design-diagram.png"
+											alt="Design Diagram" id="expandableImage" class="clickable-image"
+											data-description="Diagram of a feature functionality"
+											onclick="showModal(this)">
+										<p class="description">Diagram of a feature functionality</p>
+										<div id="imageModal" class="modal">
+											<!-- The Close Button -->
+											<span class="close" onclick="closeModal()">&times;</span>
+
+											<!-- Modal Content (The Image) -->
+											<img class="modal-content" id="modalImage">
+											<p class="description"></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
 					</div>
-
 					<div class="link-box">
-						<a href="https://s4g.itch.io/theoverride" target="_blank">Game Showcase</a>
 						<a href="#" class="popup-modal-dismiss">Close</a>
 					</div>
-
 				</div> <!-- /modal-03 -->
-
 
 				<!-- modal popups - end
 	            ============================================================= -->

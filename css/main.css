@@ -211,7 +211,6 @@ em,
 i,
 strong,
 b {
-    font-size: 1.7rem;
     line-height: 3rem;
     font-style: normal;
     font-weight: normal;
@@ -2291,7 +2290,7 @@ header .logo a {
 
 .popup-modal .description-box p {
     font-family: "poppins-regular", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     line-height: 2.4rem;
     margin-bottom: 12px;
 }
@@ -2478,6 +2477,7 @@ header .logo a {
 }
 
 #responsibilities .container {
+    font-size: 1.5rem;
     max-width: 1200px;
     margin: auto;
     padding: 0 15px;
@@ -2496,82 +2496,113 @@ header .logo a {
     grid-gap: 20px;
 }
 
+#responsibilities .content-grid p {
+    text-align: center;
+}
+
 /* Style the image */
 .clickable-image {
     cursor: pointer;
     transition: 0.3s;
-  }
-  
-  /* Style the modal */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+}
+
+/* Style the modal */
+.modal {
+    display: none;
+    /* Hidden by default */
+    flex-direction: column;
+    position: fixed;
+    /* Fixed position */
+    z-index: 9999;
+    /* Above everything else */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px; /* You can set a max-width */
-  }
-  
-  /* The Close Button */
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black with opacity */
+}
+
+/* Modal Image */
+.modal-content {
+    padding: 20px;
+    /* Give enough space for the close button */
+    box-sizing: border-box;
+    width: 100%;
+    /* You might want to adjust this */
+    max-width: 1000px;
+    /* Maximum width */
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+.modal p {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+/* The Close Button */
+.close {
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-  }
+    transition: color 0.2s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
 
-  .modal-header {
-    background-color: transparent; /* Make the header background transparent */
-    position: absolute; /* Position it absolutely relative to the modal */
-    top: 0; /* Align to the top of the modal */
-    left: 0; /* Align to the left of the modal */
-    right: 0; /* Align to the right of the modal */
-    z-index: 1000; /* Ensure it is above other content */
-  }
-  
-  /* Style for the close button */
-  .modal-close-btn {
-    font-size: 3em; /* Adjust size to your preference */
-    color: #FFF; /* Color of the 'X' can be white or any other color */
-    position: absolute; /* Position it absolutely within the header */
-    top: -60px; /* Align to the top of the header */
-    right: -35px; /* Right align with some padding */
-    background: none; /* No background */
-    border: none; /* No border */
-    padding: 0.5em; /* Add some padding for easier clicking */
+.close:hover,
+.close:focus {
+    color: #bbb;
     cursor: pointer;
-    text-decoration: none; /* Remove text decoration if it's a link */
-  }
-  
-  /* Ensure the close button is visible and has a hover effect */
-  .modal-close-btn:hover {
-    color: #8c62ff; /* Light color for hover state */
-  }
-  
-  
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Style for the close button */
+.modal-close-btn {
+    font-size: 3em;
+    /* Adjust size to your preference */
+    color: #FFF;
+    /* Color of the 'X' can be white or any other color */
+    position: absolute;
+    /* Position it absolutely within the header */
+    top: -60px;
+    /* Align to the top of the header */
+    right: -35px;
+    /* Right align with some padding */
+    background: none;
+    /* No background */
+    border: none;
+    /* No border */
+    padding: 0.5em;
+    /* Add some padding for easier clicking */
+    cursor: pointer;
+    text-decoration: none;
+    /* Remove text decoration if it's a link */
+}
+
+/* Ensure the close button is visible and has a hover effect */
+.modal-close-btn:hover {
+    color: #8c62ff;
+    /* Light color for hover state */
+}
+
+
 
 @media (max-width: 768px) {
     #responsibilities .content-grid {
